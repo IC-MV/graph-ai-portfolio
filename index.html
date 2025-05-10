@@ -3,110 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choupette Lagerfeld – Generative AI for Work & Research Portfolio</title>
+  <title>Choupette Lagerfeld – Generative AI Portfolio</title>
 
-  <!-- Google Fonts: Playfair Display (headings) & Inter (body) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <style>
-    /* --- Base styles --- */
     :root {
-      --accent: #0F52BA;          /* Sapphire blue */
-      --bg: #f4f8fa;             /* Pale background */
-      --card-bg: #ffffff;        /* Card background */
-      --text: #333333;           /* Primary text */
-      --shadow: rgba(0, 0, 0, 0.05);
+      --accent: #0F52BA;
+      --bg: #f5efe6;
+      --text: #333;
+      --shadow: rgba(0,0,0,0.05);
     }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--bg);
-      scroll-behavior: smooth;
-    }
-
-    /* --- Typography --- */
-    h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
-
-    /* --- Header --- */
-    header {
-      background: var(--accent);
-      color: #fff;
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.9rem;
-      letter-spacing: 0.5px;
-      font-weight: 700;
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-
-    /* --- Navigation --- */
-    nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background: var(--card-bg);
-      padding: 0.5rem 1rem;
-      border-bottom-left-radius: 12px;
-      box-shadow: 0 2px 6px var(--shadow);
-      z-index: 999;
-    }
-    nav a {
-      margin: 0 0.5rem;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    /* --- Layout Sections --- */
-    section { padding: 4rem 2rem 2rem; max-width: 900px; margin: 0 auto; }
-    h2 { color: var(--accent); margin-top: 0; }
-    h3 { margin-top: 1.2rem; }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      box-shadow: 0 4px 8px var(--shadow);
-      padding: 1.5rem 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-
-    ul, ol { padding-left: 1.2rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* --- Profile image --- */
-    .profile {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 1rem;
-      box-shadow: 0 2px 6px var(--shadow);
-    }
-
-    /* --- Footer --- */
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',Arial,sans-serif;line-height:1.6;color:var(--text);background:var(--bg);scroll-behavior:smooth}
+    h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif}
+    h2,h3,h4{color:var(--accent);font-weight:700}
+    strong{color:var(--accent)}
+    header{background:var(--accent);color:#fff;padding:2rem 2rem 2.5rem;text-align:center}
+    .title-main{display:block;font-size:2.2rem;font-weight:700;letter-spacing:.5px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+    .title-sub{display:block;font-size:1.2rem;font-weight:600;margin-top:.4rem;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+    nav{position:fixed;top:0;right:0;background:var(--bg);padding:.5rem 1rem;z-index:999;border-bottom-left-radius:12px;box-shadow:0 2px 6px var(--shadow)}
+    nav a{margin:0 .5rem;color:var(--accent);text-decoration:none;font-weight:600;font-size:.9rem}
+    nav a:hover{text-decoration:underline}
+    section{padding:4rem 2rem 2rem;max-width:900px;margin:0 auto}
+    section+section{padding-top:2rem}
+    .card{padding-bottom:1.3rem;margin-bottom:1.3rem}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .profile{width:220px;height:220px;border-radius:50%;object-fit:cover;object-position:top center;display:block;margin:0 auto 1.2rem;box-shadow:0 2px 6px var(--shadow);border:4px solid var(--accent)}
+    /* Weekly list */
+    .weeks{list-style:none;padding-left:0;margin:0}
+    .weeks li{margin:.4rem 0}
+    footer{text-align:center;padding:2rem 1rem;font-size:.9rem;color:#666}
   </style>
 </head>
 <body>
   <header>
-    <h1>Choupette Lagerfeld – Generative AI for Work & Research Portfolio</h1>
+    <span class="title-main">Choupette Lagerfeld</span>
+    <span class="title-sub">now part of the Generative AI revolution</span>
   </header>
 
   <nav>
@@ -115,71 +50,61 @@
     <a href="#weekly-submissions">Weekly Submissions</a>
   </nav>
 
-  <!-- ===== About Me ===== -->
   <section id="about-me">
     <h2>About Me</h2>
     <div class="card">
       <img src="https://github.com/NN-JohnDoe/graph-ai-portfolio/blob/main/Choupette_photo.png?raw=true" alt="Choupette Lagerfeld profile photo" class="profile">
-      <p><strong>Iconic blue‑cream Birman cat</strong> born on <em>15 August 2011</em>, Choupette Lagerfeld rose from cherished companion of the late Chanel creative director Karl Lagerfeld to a multimillion‑earning <em>feline fashion icon</em>.</p>
-      <p>Today, she parlayed her pedigree and photogenic poise into high‑profile brand ambassadorships and a social‑media following that tops <strong>260 000 fans on Instagram</strong>.</p>
+      <p><span>Iconic blue‑cream Birman cat</span> born on 15 August 2011, Choupette Lagerfeld rose from cherished companion of the late Chanel creative director Karl Lagerfeld to a multimillion‑earning feline fashion icon.</p>
+      <p>Today, she parlayed her pedigree and photogenic poise into high‑profile brand ambassadorships and a social‑media following that tops <span>260 000 fans on Instagram</span>.</p>
 
       <h3>Key Career Highlights</h3>
       <ul>
-        <li>Earned <strong>€3 million</strong> in 2014 across two major campaigns (Opel Corsa &amp; Shu Uemura “Shupette”).</li>
-        <li>Star of the <em>Opel Corsa 2015</em> global calendar photographed by Karl Lagerfeld.</li>
-        <li>Fronted <em>Shu Uemura × Karl Lagerfeld</em> holiday capsule “Shupette.”</li>
-        <li>Design muse for <em>LucyBalu</em> premium cat furniture line.</li>
+        <li>Earned <span>€3 million</span> in 2014 across two major campaigns (Opel Corsa &amp; Shu Uemura “Shupette”).</li>
+        <li>Star of the Opel Corsa 2015 global calendar photographed by Karl Lagerfeld.</li>
+        <li>Fronted Shu Uemura × Karl Lagerfeld holiday capsule “Shupette.”</li>
+        <li>Design muse for LucyBalu premium cat furniture line.</li>
         <li>Featured in Vogue, Harper’s Bazaar, Vanity Fair, and People.</li>
-        <li>Campaign face of <em>Hublot Big Bang 20ᵗʰ Anniversary</em> (2025).</li>
+        <li>Campaign face of Hublot Big Bang 20ᵗʰ Anniversary (2025).</li>
       </ul>
       <p><strong>Find me on Instagram:</strong> <a href="https://instagram.com/choupetteofficiel" target="_blank">@choupetteofficiel</a></p>
     </div>
   </section>
 
-  <!-- ===== About the Course ===== -->
   <section id="about-course">
     <h2>About the Course</h2>
     <div class="card">
-      <h3>LIVE ONLINE CERTIFICATION</h3>
-      <p><strong>Generative AI for Work &amp; Research Productivity</strong><br>
-         <em>No‑Code AI Tools for Task Automation</em></p>
-
-      <p>This <strong>8‑week</strong> program teaches participants to automate data analysis, content creation, knowledge management, and routine tasks—building AI solutions that amplify productivity for individuals and teams.</p>
-
+      <h3>Live Online Certification – Generative AI For Work &amp; Research Productivity</h3>
+      <p>No‑Code AI Tools for Task Automation</p>
+      <p>This 8‑week program teaches participants to automate data analysis, content creation, knowledge management, and routine tasks—building AI solutions that amplify productivity for individuals and teams.</p>
       <ul>
         <li>Automate time‑consuming document, spreadsheet, and data tasks</li>
         <li>Leverage AI tools for knowledge organization and literature reviews</li>
         <li>Develop custom chatbots to support projects or team workflows</li>
         <li>Create professional and scientific visuals &amp; presentations with AI</li>
-        <li>Apply new skills in a hands‑on <em>capstone project</em></li>
+        <li>Apply new skills in a hands‑on capstone project</li>
         <li>Get real‑time support via live workshops, help sessions, and forums</li>
       </ul>
-
       <h4>Tool Stack Highlights</h4>
       <p>OpenAI · Gemini · Anthropic · Julius · Bricks · Replit · Lindy · Make · Botpress · Invideo · Gamma · Vercel</p>
     </div>
   </section>
 
-  <!-- ===== Weekly Submissions ===== -->
   <section id="weekly-submissions">
     <h2>My Weekly Submissions</h2>
     <div class="card">
-      <ol>
-        <li><a href="#">Week 1 – Automation Concept</a></li>
-        <li><a href="#">Week 2 – AI Chatbot Prototype</a></li>
-        <li><a href="#">Week 3 – Data Processing Workflow</a></li>
-        <li><a href="#">Week 4 – Content Generation Pipeline</a></li>
-        <li><a href="#">Week 5 – Knowledge Management System</a></li>
-        <li><a href="#">Week 6 – Visual Presentation Mock‑ups</a></li>
-        <li><a href="#">Week 7 – Capstone Outline</a></li>
-        <li><a href="#">Week 8 – Capstone Demo</a></li>
-      </ol>
-      <p style="margin-top:1rem;">Links will be added as each submission is completed.</p>
+      <ul class="weeks">
+        <li>Week 1 – Coming soon</li>
+        <li>Week 2 – Coming soon</li>
+        <li>Week 3 – Coming soon</li>
+        <li>Week 4 – Coming soon</li>
+        <li>Week 5 – Coming soon</li>
+        <li>Week 6 – Coming soon</li>
+        <li>Week 7 – Coming soon</li>
+        <li>Week 8 – Coming soon</li>
+      </ul>
     </div>
   </section>
 
-  <footer>
-    © 2025 Choupette Lagerfeld. All rights reserved.
-  </footer>
+  <footer>© 2025 Choupette Lagerfeld</footer>
 </body>
 </html>
