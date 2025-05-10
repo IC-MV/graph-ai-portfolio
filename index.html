@@ -3,119 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Whiskers – Generative AI Portfolio</title>
+  <title>Choupette Lagerfeld – Generative AI for Work & Research Portfolio</title>
+
+  <!-- Google Fonts: Playfair Display (headings) & Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
+    /* --- Base styles --- */
     :root {
-      --primary:#4c5c99;
-      --accent:#42b883;
-      --bg:#f9f9fb;
-      --text:#333;
+      --accent: #0F52BA;          /* Sapphire blue */
+      --bg: #f4f8fa;             /* Pale background */
+      --card-bg: #ffffff;        /* Card background */
+      --text: #333333;           /* Primary text */
+      --shadow: rgba(0, 0, 0, 0.05);
     }
-    *{box-sizing:border-box;}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
-    /* Serif font for headings */
-    h1,h2,h3,h4,h5,h6{font-family:"Georgia","Times New Roman",serif;}
-    header{background:var(--primary);color:#fff;padding:2rem 1rem;text-align:center;}
-    header h1{margin:0;font-size:2rem;}
-    header p{margin-top:0.5rem;font-style:italic;}
-    nav{background:#fff;border-bottom:1px solid #ddd;display:flex;justify-content:center;gap:1rem;padding:0.5rem;position:sticky;top:0;}
-    nav a{color:var(--primary);text-decoration:none;font-weight:bold;}
-    nav a:hover{color:var(--accent);}
-    section{max-width:900px;margin:0 auto;padding:2rem 1rem;}
-    section h2{margin-top:0;}
-    .card{background:#fff;padding:1rem 1.5rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.05);}
-    .grid{display:grid;gap:1rem;}
-    @media(min-width:600px){.grid{grid-template-columns:1fr 1fr;}}
-    footer{background:#111;color:#fff;text-align:center;padding:1rem;}
-    ul{padding-left:1.2rem;}
-    .submissions ul{list-style:none;padding:0;}
-    .submissions li{background:#fff;margin-bottom:0.5rem;padding:0.75rem 1rem;border-radius:6px;border-left:4px solid var(--primary);}  
-    /* Profile photo */
-    .profile{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 1rem;}
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);     /* Plain pale background */
+      scroll-behavior: smooth;
+    }
+
+    /* --- Typography --- */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* --- Header --- */
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: var(--card-bg);
+      padding: 0.5rem 1rem;
+      border-bottom-left-radius: 12px;
+      box-shadow: 0 2px 6px var(--shadow);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* --- Layout Sections --- */
+    section { padding: 4rem 2rem 2rem; max-width: 900px; margin: 0 auto; }
+    h2 { color: var(--accent); margin-top: 0; }
+    h3 { margin-top: 1.2rem; }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px var(--shadow);
+      padding: 1.5rem 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul, ol { padding-left: 1.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mr. Whiskers</h1>
-    <p>Feline Enthusiast & AI Productivity Explorer</p>
+    <h1>Choupette Lagerfeld – Generative AI for Work & Research Portfolio</h1>
   </header>
 
   <nav>
-    <a href="#about-me">About Me</a>
-    <a href="#about-course">About the Course</a>
-    <a href="#submissions">Weekly Submissions</a>
+    <a href="#about-me">About Me</a>
+    <a href="#about-course">About the Course</a>
+    <a href="#weekly-submissions">Weekly Submissions</a>
   </nav>
 
+  <!-- ===== About Me ===== -->
   <section id="about-me">
-    <h2>About Me</h2>
+    <h2>About Me</h2>
     <div class="card">
-      <img src="https://github.com/NN-JohnDoe/graph-ai-portfolio/blob/main/Mr%20Whiskers.jpg?raw=true" alt="Mr. Whiskers profile photo" class="profile">
-      <p><strong>Species:</strong> Domestic Cat (Felis catus)</p>
-      <p><strong>Breed:</strong> British Shorthair</p>
-      <p><strong>Age:</strong> 5 years</p>
-      <p><strong>Fur Color:</strong> Grey &nbsp;|&nbsp; <strong>Eye Color:</strong> Amber</p>
-      <p><strong>Professional Summary:</strong> A highly skilled and experienced feline with a strong background in napping, hunting, and human manipulation. Known for exceptional purring abilities, superior mouse-catching skills, and the ability to turn any object into a cozy bed.</p>
-      <div class="grid">
-        <div>
-          <h3>Education</h3>
-          <ul>
-            <li>Certificate in Advanced Purring, Feline Academy</li>
-            <li>Diploma in Cuteness Manipulation, Human Psychology Institute</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Key Skills</h3>
-          <ul>
-            <li>Expert in Purring & Meowing</li>
-            <li>Advanced Claw Sharpening Techniques</li>
-            <li>Master of Catnip Consumption</li>
-            <li>Proficient in Knocking Items Off Tables</li>
-            <li>Highly Skilled in Ignoring Humans</li>
-          </ul>
-        </div>
-      </div>
-      <h3>Professional Experience</h3>
+      <p><strong>Iconic blue‑cream Birman cat</strong> born on <em>15 August 2011</em>, Choupette Lagerfeld rose from cherished companion of the late Chanel creative director Karl Lagerfeld to a multimillion‑earning <em>feline fashion icon</em>.</p>
+      <p>Today, she parlayed her pedigree and photogenic poise into high‑profile brand ambassadorships and a social‑media following that tops <strong>260 000 fans on Instagram</strong>.</p>
+
+      <h3>Key Career Highlights</h3>
       <ul>
-        <li><strong>Chief Nap Officer&nbsp;(2019 – Present):</strong> Oversees nap strategy and cozy-spot quality control.</li>
-        <li><strong>Mouse Control Specialist&nbsp;(2018 – Present):</strong> Eliminates rodent intruders and presents trophies.</li>
-        <li><strong>Personal Space Manager&nbsp;(2018 – Present):</strong> Optimizes human furniture for comfort and affection.</li>
+        <li>Earned <strong>€3 million</strong> in 2014 across two major campaigns (Opel Corsa &amp; Shu Uemura “Shupette”).</li>
+        <li>Star of the <em>Opel Corsa 2015</em> global calendar photographed by Karl Lagerfeld.</li>
+        <li>Fronted <em>Shu Uemura × Karl Lagerfeld</em> holiday capsule “Shupette.”</li>
+        <li>Design muse for <em>LucyBalu</em> premium cat furniture line.</li>
+        <li>Featured in Vogue, Harper’s Bazaar, Vanity Fair, and People.</li>
+        <li>Campaign face of <em>Hublot Big Bang 20ᵗʰ Anniversary</em> (2025).</li>
       </ul>
-      <h3>Hobbies & Interests</h3>
-      <ul>
-        <li>Bird Watching</li>
-        <li>Sunbathing</li>
-        <li>Playing with Laser Pointers</li>
-        <li>Ignoring Expensive Toys</li>
-        <li>Climbing Curtains</li>
-      </ul>
+      <p><strong>Find me on Instagram:</strong> <a href="https://instagram.com/choupetteofficiel" target="_blank">@choupetteofficiel</a></p>
     </div>
   </section>
 
+  <!-- ===== About the Course ===== -->
   <section id="about-course">
-    <h2>About the Course</h2>
+    <h2>About the Course</h2>
     <div class="card">
-      <h3>Generative AI for Work &amp; Research Productivity</h3>
-      <p><em>LIVE ONLINE CERTIFICATION • 8&nbsp;Weeks</em></p>
+      <h3>LIVE ONLINE CERTIFICATION</h3>
+      <p><strong>Generative AI for Work &amp; Research Productivity</strong><br>
+         <em>No‑Code AI Tools for Task Automation</em></p>
+
+      <p>This <strong>8‑week</strong> program teaches participants to automate data analysis, content creation, knowledge management, and routine tasks—building AI solutions that amplify productivity for individuals and teams.</p>
+
       <ul>
-        <li>No-Code AI Tools for Task Automation</li>
-        <li>Automate document, spreadsheet, and data tasks</li>
-        <li>Organize knowledge and streamline literature reviews</li>
-        <li>Develop custom chatbots for projects and teams</li>
-        <li>Create professional visuals and presentations with AI</li>
-        <li>Hands-on capstone project with real-time support via live workshops, help sessions, and online forums</li>
+        <li>Automate time‑consuming document, spreadsheet, and data tasks</li>
+        <li>Leverage AI tools for knowledge organization and literature reviews</li>
+        <li>Develop custom chatbots to support projects or team workflows</li>
+        <li>Create professional and scientific visuals &amp; presentations with AI</li>
+        <li>Apply new skills in a hands‑on <em>capstone project</em></li>
+        <li>Get real‑time support via live workshops, help sessions, and forums</li>
       </ul>
+
+      <h4>Tool Stack Highlights</h4>
+      <p>OpenAI · Gemini · Anthropic · Julius · Bricks · Replit · Lindy · Make · Botpress · Invideo · Gamma · Vercel</p>
     </div>
   </section>
 
-  <section id="submissions" class="submissions">
+  <!-- ===== Weekly Submissions ===== -->
+  <section id="weekly-submissions">
     <h2>My Weekly Submissions</h2>
-    <p class="card">Links will appear here as the course progresses.</p>
-    <ul>
-      <li>Week&nbsp;1 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;2 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;3 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;4 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;5 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;6 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;7 – <a href="#">Coming soon</a></li>
-      <li>Week&nbsp;8 – <a
+    <div class="card">
+      <ol>
+        <li><a href="#">Week 1 – Automation Concept</a></li>
+        <li><a href="#">Week 2 – AI Chatbot Prototype</a></li>
+        <li><a href="#">Week 3 – Data Processing Workflow</a></li>
+        <li><a href="#">Week 4 – Content Generation Pipeline</a></li>
+        <li><a href="#">Week 5 – Knowledge Management System</a></li>
+        <li><a href="#">Week 6 – Visual Presentation Mock‑ups</a></li>
+        <li><a href="#">Week 7 – Capstone Outline</a></li>
+        <li><a href="#">Week 8 – Capstone Demo</a></li>
+      </ol>
+      <p style="margin-top:1rem;">Links will be added as each submission is completed.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Choupette Lagerfeld. All rights reserved.
+  </footer>
+</body>
+</html>
