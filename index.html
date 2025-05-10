@@ -24,14 +24,12 @@
       font-family: 'Inter', Arial, Helvetica, sans-serif;
       line-height: 1.6;
       color: var(--text);
-      background: var(--bg);     /* Plain pale background */
+      background: var(--bg);
       scroll-behavior: smooth;
     }
 
     /* --- Typography --- */
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Playfair Display', serif;
-    }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
 
     /* --- Header --- */
     header {
@@ -86,6 +84,17 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
+    /* --- Profile image --- */
+    .profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1rem;
+      box-shadow: 0 2px 6px var(--shadow);
+    }
+
     /* --- Footer --- */
     footer {
       text-align: center;
@@ -110,6 +119,7 @@
   <section id="about-me">
     <h2>About Me</h2>
     <div class="card">
+      <img src="https://github.com/NN-JohnDoe/graph-ai-portfolio/blob/main/Choupette_photo.png?raw=true" alt="Choupette Lagerfeld profile photo" class="profile">
       <p><strong>Iconic blue‑cream Birman cat</strong> born on <em>15 August 2011</em>, Choupette Lagerfeld rose from cherished companion of the late Chanel creative director Karl Lagerfeld to a multimillion‑earning <em>feline fashion icon</em>.</p>
       <p>Today, she parlayed her pedigree and photogenic poise into high‑profile brand ambassadorships and a social‑media following that tops <strong>260 000 fans on Instagram</strong>.</p>
 
