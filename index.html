@@ -3,85 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choupette Lagerfeld – Generative AI Portfolio</title>
+  <title>Choupette Lagerfeld – Generative AI Portfolio</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --accent: #0F52BA;
-      --bg: #f5efe6;
-      --text: #333;
-      --shadow: rgba(0,0,0,0.05);
+    :root {--accent:#0F52BA;--bg:#f5efe6;--text:#333;--shadow:rgba(0,0,0,0.05);}*{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Inter',Arial,sans-serif;
+      line-height:1.6;
+      color:var(--text);
+      background:var(--bg);
+      scroll-behavior:smooth;
     }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:'Inter',Arial,sans-serif;line-height:1.6;color:var(--text);background:var(--bg);scroll-behavior:smooth}
+
     h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif}
-    h2,h3,h4{color:var(--accent);font-weight:700}
-    strong{color:var(--accent)}
+    h2,h3,h4{color:var(--accent);font-weight:700}strong{color:var(--accent)}
+
     header{background:var(--accent);color:#fff;padding:2rem 2rem 2.5rem;text-align:center}
     .title-main{display:block;font-size:2.2rem;font-weight:700;letter-spacing:.5px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
     .title-sub{display:block;font-size:1.2rem;font-weight:600;margin-top:.4rem;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+
     nav{position:fixed;top:0;right:0;background:var(--bg);padding:.5rem 1rem;z-index:999;border-bottom-left-radius:12px;box-shadow:0 2px 6px var(--shadow)}
     nav a{margin:0 .5rem;color:var(--accent);text-decoration:none;font-weight:600;font-size:.9rem}
     nav a:hover{text-decoration:underline}
+
     section{padding:4rem 2rem 2rem;max-width:900px;margin:0 auto}
     section+section{padding-top:2rem}
     .card{padding-bottom:1.3rem;margin-bottom:1.3rem}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
+
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+
     .profile{width:220px;height:220px;border-radius:50%;object-fit:cover;object-position:top center;display:block;margin:0 auto 1.2rem;box-shadow:0 2px 6px var(--shadow);border:4px solid var(--accent)}
-    .weeks{list-style:none;padding-left:0;margin:0}
-    .weeks li{margin:.4rem 0}
+
+    .weeks{list-style:none;padding-left:0;margin:0}.weeks li{margin:.4rem 0}
+
+    /* legal section */
+    #legal{font-size:.8rem;line-height:1.4;color:#444}
+    #legal ul{padding-left:1rem;margin:.4rem 0}#legal li{list-style:square;margin:.2rem 0}
+
     footer{text-align:center;padding:2rem 1rem;font-size:.9rem;color:#666}
   </style>
 </head>
 <body>
   <header>
     <span class="title-main">Choupette Lagerfeld</span>
-    <span class="title-sub">now part of the Generative AI revolution</span>
+    <span class="title-sub">now part of the Generative AI revolution</span>
   </header>
 
   <nav>
-    <a href="#about-me">About Me</a>
-    <a href="#about-course">About the Course</a>
-    <a href="#weekly-submissions">Weekly Submissions</a>
+    <a href="#about-me">About Me</a>
+    <a href="#about-course">About the Course</a>
+    <a href="#weekly-submissions">Weekly Submissions</a>
+    <a href="#legal">Legal</a>
   </nav>
 
   <section id="about-me">
-    <h2>About Me</h2>
+    <h2>About Me</h2>
     <div class="card">
       <img src="https://github.com/NN-JohnDoe/graph-ai-portfolio/blob/main/Choupette_photo.png?raw=true" alt="Choupette Lagerfeld profile photo" class="profile">
-      <p><span>Iconic blue‑cream Birman cat</span> born on 15 August 2011, Choupette Lagerfeld rose from cherished companion of the late Chanel creative director Karl Lagerfeld to a multimillion‑earning feline fashion icon.</p>
-      <p>Today, she parlayed her pedigree and photogenic poise into high‑profile brand ambassadorships and a social‑media following that tops <span>260 000 fans on Instagram</span>.</p>
-
+      <p><span>Iconic blue-cream Birman cat</span> born on 15 August 2011, Choupette Lagerfeld rose from cherished companion of the late Chanel creative director Karl Lagerfeld to a multimillion-earning feline fashion icon.</p>
+      <p>Today, she parlayed her pedigree and photogenic poise into high-profile brand ambassadorships and a social-media following that tops <span>260 000 fans on Instagram</span>.</p>
       <h3>Key Career Highlights</h3>
       <ul>
-        <li>Earned <span>€3 million</span> in 2014 across two major campaigns (Opel Corsa &amp; Shu Uemura “Shupette”).</li>
-        <li>Star of the Opel Corsa 2015 global calendar photographed by Karl Lagerfeld.</li>
-        <li>Fronted Shu Uemura × Karl Lagerfeld holiday capsule “Shupette.”</li>
+        <li>Earned <span>€3 million</span> in 2014 across two major campaigns (Opel Corsa &amp; Shu Uemura “Shupette”).</li>
+        <li>Star of the Opel Corsa 2015 global calendar photographed by Karl Lagerfeld.</li>
+        <li>Fronted Shu Uemura × Karl Lagerfeld holiday capsule “Shupette.”</li>
         <li>Design muse for LucyBalu premium cat furniture line.</li>
-        <li>Featured in Vogue, Harper’s Bazaar, Vanity Fair, and People.</li>
-        <li>Campaign face of Hublot Big Bang 20ᵗʰ Anniversary (2025).</li>
+        <li>Featured in Vogue, Harper’s Bazaar, Vanity Fair, and People.</li>
+        <li>Campaign face of Hublot Big Bang 20ᵗʰ Anniversary (2025).</li>
       </ul>
       <p><strong>Find me on Instagram:</strong> <a href="https://instagram.com/choupetteofficiel" target="_blank">@choupetteofficiel</a></p>
     </div>
   </section>
 
   <section id="about-course">
-    <h2>About the Course</h2>
+    <h2>About the Course</h2>
     <div class="card">
-      <h3>Live Online Certification – Generative AI For Work &amp; Research Productivity</h3>
-      <p>No‑Code AI Tools for Task Automation</p>
-      <p>This 8‑week program teaches participants to automate data analysis, content creation, knowledge management, and routine tasks—building AI solutions that amplify productivity for individuals and teams.</p>
+      <h3>Live Online Certification – Generative AI For Work &amp; Research Productivity</h3>
+      <p>No-Code AI Tools for Task Automation</p>
+      <p>This 8-week program teaches participants to automate data analysis, content creation, knowledge management, and routine tasks—building AI solutions that amplify productivity for individuals and teams.</p>
       <ul>
-        <li>Automate time‑consuming document, spreadsheet, and data tasks</li>
+        <li>Automate time-consuming document, spreadsheet, and data tasks</li>
         <li>Leverage AI tools for knowledge organization and literature reviews</li>
         <li>Develop custom chatbots to support projects or team workflows</li>
         <li>Create professional and scientific visuals &amp; presentations with AI</li>
-        <li>Apply new skills in a hands‑on capstone project</li>
-        <li>Get real‑time support via live workshops, help sessions, and forums</li>
+        <li>Apply new skills in a hands-on capstone project</li>
+        <li>Get real-time support via live workshops, help sessions, and forums</li>
       </ul>
       <h4>Tool Stack Highlights</h4>
       <p>OpenAI · Gemini · Anthropic · Julius · Bricks · Replit · Lindy · Make · Botpress · Invideo · Gamma · Vercel</p>
@@ -92,18 +102,29 @@
     <h2>My Weekly Submissions</h2>
     <div class="card">
       <ul class="weeks">
-        <li>Week 1 – This website</li>
-        <li>Week 2 – <a href="Internet Users vs Average Daily Income_automated data analysis &amp; reporting_Isabel Montoya.pdf" target="_blank">Analysis of Gapminder data to explore relationships between two global indicators using AI tools</a></li>
-        <li>Week 3 – Coming soon</li>
-        <li>Week 4 – Coming soon</li>
-        <li>Week 5 – Coming soon</li>
-        <li>Week 6 – Coming soon</li>
-        <li>Week 7 – Coming soon</li>
-        <li>Week 8 – Coming soon</li>
+        <li>Week 1 – This website</li>
+        <li>Week 2 – <a href="Internet Users vs Average Daily Income_automated data analysis &amp; reporting_Isabel Montoya.pdf" target="_blank">Analysis of Gapminder data to explore relationships between two global indicators using AI tools</a></li>
+        <li>Week 3 – Coming soon</li>
+        <li>Week 4 – Coming soon</li>
+        <li>Week 5 – Coming soon</li>
+        <li>Week 6 – Coming soon</li>
+        <li>Week 7 – Coming soon</li>
+        <li>Week 8 – Coming soon</li>
       </ul>
     </div>
   </section>
 
-  <footer>© 2025 Choupette Lagerfeld</footer>
+  <section id="legal">
+    <h2>Legal / Copyright Notice</h2>
+    <p>Non-commercial academic use. This submission is original coursework for Generative AI for Work &amp; Research Productivity and will be evaluated only within that context.</p>
+    <p>All photographs, captions and other creative material reproduced from @choupetteofficiel (Instagram) remain © their respective right-holders. They appear here exclusively for quotation, analysis and illustration in line with:</p>
+    <ul>
+      <li>Colombia: Ley 23 de 1982, arts. 31-34 &amp; 40; Ley 1915 de 2018 (teaching and quotation exceptions)</li>
+      <li>EU: Directive 2001/29/EC, art. 5(3)(a) &amp; (d) (quotation / teaching &amp; research)</li>
+    </ul>
+    <p>CHOUPETTE® is an EU trade-mark (EUIPO reg. no. 018091197). This project is entirely unaffiliated with, and not endorsed by, the trade-mark owner or the estate of Karl Lagerfeld.</p>
+    <p>No further publication or commercial use of the included Instagram material is intended. Any third-party redistribution requires permission from the respective copyright owners.</p>
+  </section>
+
 </body>
 </html>
